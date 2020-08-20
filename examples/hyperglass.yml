@@ -1,0 +1,9 @@
+---
+listen_address: "0.0.0.0"
+listen_port: 8001
+cache:
+  database: 0
+  host: redis
+  port: 6379
+  show_text: true
+  timeout: 120

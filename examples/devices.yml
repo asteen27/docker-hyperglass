@@ -1,0 +1,17 @@
+routers:
+  - name: router01.pop01
+    address: 10.0.0.1
+    network: AS65000
+    credential:
+      username: username
+      password: password
+    location: pop01
+    display_name: Phoenix, AZ
+    port: 22
+    nos: cisco_ios
+    vrfs:
+      - name: default
+        ipv4:
+          source_address: 192.0.2.1
+        ipv6:
+          source_address: 2001:db8::1

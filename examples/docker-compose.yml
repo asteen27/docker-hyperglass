@@ -1,0 +1,16 @@
+version: '3.4'
+
+services:
+  hyperglass:
+    image: asteen313/hyperglass:1.0.0-beta57
+    restart: always
+    ports:
+      - target: 8001
+        published: 8001
+    volumes:
+      - ./hyperglass.yml:/etc/hyperglass/hyperglass.yaml
+      - ./devices.yml:/etc/hyperglass/devices.yaml
+
+  redis:
+    image: redis:6-alpine
+    restart: always
